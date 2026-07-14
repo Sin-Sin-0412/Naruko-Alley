@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="ja">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BV0JGN4GP8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BV0JGN4GP8");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>鳴言小路 | Naruko Alley</title>
@@ -112,7 +126,9 @@
           </div>
           <!-- 下段: ボタンエリア (横並び) -->
           <div class="chat-actions">
-            <button id="chat-send-btn" class="chat-send-btn">送る<span class="btn-en">Send</span></button>
+            <button id="chat-send-btn" class="chat-send-btn">
+              送る<span class="btn-en">Send</span>
+            </button>
             <button id="fetch-whispers-btn" class="fetch-whispers-btn hidden">
               誰かの独り言を見る<span class="btn-en">Discover</span>
             </button>
@@ -121,7 +137,9 @@
       </div>
 
       <!-- チャット開閉ボタン  -->
-      <button id="chat-toggle-btn" class="chat-toggle-btn">言葉を残す<span class="btn-en">Write</span></button>
+      <button id="chat-toggle-btn" class="chat-toggle-btn">
+        言葉を残す<span class="btn-en">Write</span>
+      </button>
       <div id="credit-area" class="credit-area hidden">
         <a class="credit" href="https://x.com/sinsin_chaos" target="_blank"
           >Created by Shinya</a
